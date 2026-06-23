@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-social-publisher",
-  "version": "1.0.0",
-  "description": "Social Media Cross-Platform Publisher — Unified publishing to Twitter/X, LinkedIn, Instagram, TikTok, YouTube, Reddit",
+  "version": "1.0.1",
+  "description": "Social Media Cross-Platform Publisher \u2014 Unified publishing to Twitter/X, LinkedIn, Instagram, TikTok, YouTube, Reddit",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,11 +9,26 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-social-publisher",
   "homepage": "https://cortexprism.io/marketplace/plugins/social-publisher",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "social_create_post", "description": "Create platform-optimized post", "params": [] },
-    { "name": "social_schedule", "description": "Schedule posts across platforms", "params": [] },
-    { "name": "social_best_times", "description": "Analyze best posting times", "params": [] },
+    {
+      "name": "social_create_post",
+      "description": "Create platform-optimized post",
+      "params": []
+    },
+    {
+      "name": "social_schedule",
+      "description": "Schedule posts across platforms",
+      "params": []
+    },
+    {
+      "name": "social_best_times",
+      "description": "Analyze best posting times",
+      "params": []
+    },
     {
       "name": "social_engagement_report",
       "description": "Generate engagement report",
@@ -21,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
